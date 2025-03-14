@@ -15,7 +15,7 @@ export default function Footer() {
           . All rights reserved.
         </p>
         <div className="mt-6 flex items-center gap-x-6 text-gray-400">
-          <Link href="https://github.com/popsy-ui">
+          <Link href="https://github.com/JhojanGgarcia/popsy-AI">
             <Github />
           </Link>
         </div>
