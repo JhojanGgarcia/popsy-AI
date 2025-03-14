@@ -130,7 +130,7 @@ export default function Header({ currentPage }) {
           >
             <button
              type="button"
-              className="flex p-2 cursor-pointer items-center justify-center gap-2 rounded-xl border hover:border-white/15 transition-colors duration-200 border-white/10  text-xs font-light text-white dark:border-black/50 dark:text-black/70"
+              className="flex p-2 cursor-pointer items-center justify-center gap-2 rounded-xl border hover:border-white/15 dark:hover:border-black/10 transition-colors duration-200 border-white/10  text-xs font-light text-white dark:border-black/50 dark:text-black/70"
             >
               <Github className="h-4 w-4 dark:fill-black/60" />
               Github
