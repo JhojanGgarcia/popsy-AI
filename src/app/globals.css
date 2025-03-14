@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.font-pacifico {
+  font-family: "Pacifico", cursive;
+}
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+.mask {
+  mask-image: linear-gradient(black 20%, transparent);
+}
+.gradient-mask-t-0 {
+  -webkit-mask-image: linear-gradient(#0000, #000);
+  mask-image: linear-gradient(#0000, #000);
+}
+:root {
+  --color-1: 0 100% 63%;
+  --color-2: 270 100% 63%;
+  --color-3: 210 100% 63%;
+  --color-4: 195 100% 63%;
+  --color-5: 90 100% 63%;
+}
+@keyframes gradient {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
+.animate-gradient {
+  animation: gradient 8s linear infinite;
+  -webkit-animation: gradient 8s linear infinite;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3e3e3e69;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d2d2d;
+}
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.clip-path-reveal {
+  clip-path: inset(0 0 100% 0);
+  animation: revealClipPath 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes revealClipPath {
+  from {
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
