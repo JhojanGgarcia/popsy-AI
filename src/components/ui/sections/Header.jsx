@@ -124,8 +124,8 @@ export default function Header({ currentPage }) {
         <div className="absolute right-0 flex items-center justify-center gap-2 p-2">
           <Switch />
         </div>
-        <Link href="https://github.com/JhojanGgarcia/popsy-AI" className="absolute left-0 flex items-center justify-center">
-        <Button icon={<Github className="h-4 w-4 dark:fill-black/60" />} className={"gap-2"} label={"Stars on GitHub"} />
+        <Link href="https://github.com/JhojanGgarcia/popsy-AI" className="absolute left-0  flex items-center justify-center">
+        <Button icon={<Github className="h-4 w-4 dark:fill-black/60" />} className={"gap-2 "} label={"Github"} />
         </Link>
         <div className="absolute top-1 left-2 flex items-center justify-center gap-2">
           {currentPage === "assistant" && (
