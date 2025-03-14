@@ -13,7 +13,6 @@ import Github from "@/components/icons/Github";
 export default function Header({ currentPage }) {
   return (
     <header className="relative top-0 z-50 mx-auto flex h-16 items-center justify-center overflow-visible border-white/10 bg-[radial-gradient(circle_at_left,rgba(130,130,130,0.15)_0%,transparent_30%)] p-3 backdrop-blur-2xl md:bg-[radial-gradient(circle_at_top,rgba(130,130,130,0.15)_0%,transparent_30%)] dark:bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.2)_0%,transparent_30%)]">
-
       {currentPage === "assistant" && (
         <>
           <div className="absolute right-0 z-50 min-h-full w-[2px] border-r border-white/10 transition dark:border-black/10"></div>
@@ -124,9 +123,18 @@ export default function Header({ currentPage }) {
         <div className="absolute right-0 flex items-center justify-center gap-2 p-2">
           <Switch />
         </div>
-        <Link href="https://github.com/JhojanGgarcia/popsy-AI" className="absolute left-0  flex items-center justify-center">
-        <Button icon={<Github className="h-4 w-4 dark:fill-black/60" />} className={"gap-2 "} label={"Github"} />
-        </Link>
+        {currentPage !== "assistant" && (
+          <Link
+            href="https://github.com/JhojanGgarcia/popsy-AI"
+            className="absolute left-0 flex items-center justify-center"
+          >
+            <Button
+              icon={<Github className="h-4 w-4 dark:fill-black/60" />}
+              className={"gap-2"}
+              label={"Github"}
+            />
+          </Link>
+        )}
         <div className="absolute top-1 left-2 flex items-center justify-center gap-2">
           {currentPage === "assistant" && (
             <TooltipBlock tooltipText="Back" className="-bottom-14">
