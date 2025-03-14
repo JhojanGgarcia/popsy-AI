@@ -16,7 +16,7 @@ export default function Footer() {
         </p>
         <div className="mt-6 flex items-center gap-x-6 text-gray-400">
           <Link href="https://github.com/JhojanGgarcia/popsy-AI">
-            <Github />
+            <Github className="h-4 w-4 dark:fill-black/60" />
           </Link>
         </div>
       </div>
