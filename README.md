@@ -6,10 +6,8 @@
 
 Popsy is a [Generative AI](https://generative.ai) powered chatbot that uses [Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com).
 
-Imagina un asistente de inteligencia artificial que no solo entiende tus ideas, sino que las anima. 💡⚡ Con Framer Motion, Popsy AI transforma cualquier prompt en una experiencia visual dinámica, permitiéndote gestionar y recopilar conversaciones a tu gusto.
+Imagine an artificial intelligence assistant that not only understands your ideas, but animates them. With Framer Motion, Popsy AI transforms any prompt into a dynamic visual experience, allowing you to manage and collect conversations to your liking.
 
-
-- 🎨 Crea. Anima. Controla.
-- 📝 Tu historial de chats, en tus manos.
-
+- Create. Animate. Control.
+- Your chat history, in your hands.
 
