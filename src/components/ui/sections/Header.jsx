@@ -128,11 +128,13 @@ export default function Header({ currentPage }) {
             href="https://github.com/JhojanGgarcia/popsy-AI"
             className="absolute left-0 flex items-center justify-center"
           >
-            <Button
-              icon={<Github className="h-4 w-4 dark:fill-black/60" />}
-              className={"gap-2"}
-              label={"Github"}
-            />
+            <button
+             type="button"
+              className="flex p-2 cursor-pointer items-center justify-center gap-2 rounded-xl border hover:border-white/15 transition-colors duration-200 border-white/10  text-xs font-light text-white dark:border-black/50 dark:text-black/70"
+            >
+              <Github className="h-4 w-4 dark:fill-black/60" />
+              Github
+            </button>
           </Link>
         )}
         <div className="absolute top-1 left-2 flex items-center justify-center gap-2">
